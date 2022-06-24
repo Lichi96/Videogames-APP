@@ -32,7 +32,8 @@ module.exports = (sequelize) => {
 			allowNull: false
 		},
 		image: {
-			type: DataTypes.STRING(1234)
+			type: DataTypes.STRING(1234),
+			defaultValue: "https://www.sinrumbofijo.com/wp-content/uploads/2016/05/default-placeholder.png"
 		},
 		createdInDB: {
 			type: DataTypes.BOOLEAN,
