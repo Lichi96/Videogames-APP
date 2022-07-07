@@ -6,8 +6,8 @@ const findOrCreateGenres = async (req, res) => {
     genres.map(async (g) => {
         await Genre.findOrCreate({ where: { id: g.id, name: g.name}});
     });
-
-    res.json(genres);
+    const orderedGenres = genres.sort((a, b) => a.name.localeCompare(b.name))
+    res.json(orderedGenres);
 }
 
-module.exports = findOrCreateGenres
+module.exports = findOrCreateGenres;

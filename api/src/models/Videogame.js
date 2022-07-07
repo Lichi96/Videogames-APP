@@ -25,7 +25,7 @@ module.exports = (sequelize) => {
 		},
 		rating: {
 			type: DataTypes.FLOAT,
-			defaultValue: 0
+			defaultValue: 1
 		},
 		platforms: {
 			type: DataTypes.ARRAY(DataTypes.STRING),
@@ -33,7 +33,7 @@ module.exports = (sequelize) => {
 		},
 		image: {
 			type: DataTypes.STRING(1234),
-			defaultValue: "https://www.sinrumbofijo.com/wp-content/uploads/2016/05/default-placeholder.png"
+			defaultValue: "https://p4.wallpaperbetter.com/wallpaper/51/182/360/video-game-game-over-minimalist-wallpaper-preview.jpg"
 		},
 		createdInDB: {
 			type: DataTypes.BOOLEAN,
