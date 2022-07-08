@@ -9,7 +9,7 @@ const NavBar = () => {
         <Nav>
             <img src={logo} alt="logo" />
             <h1>All Videogames</h1>
-            <Link to="/create">Create New Videogame</Link>
+            <Link to="/create"><span>Create</span> New Videogame</Link>
         </Nav>
     )
 }

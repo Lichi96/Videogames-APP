@@ -25,9 +25,17 @@ export const Nav = styled.nav`
         text-decoration: none;
         color: #fff;
         font-size: 18px;
+        padding-bottom: 4px;
+
+        span {
+            color: #2a91b0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
         &:hover {
-            text-decoration: underline;
+            border-bottom: 1px solid #fff;
         }
     }
 `;
