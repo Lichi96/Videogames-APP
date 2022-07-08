@@ -8,7 +8,7 @@ const Modal = ({title, message, icon, question, closeModal, action}) => {
             <Overlay>
                 <ContainerModal>
                     <div className="header">
-                        <h4>{title}</h4>
+                        <h4 style={{ color: title === "Success" ? "#1a9622" : "#eb9534"}}>{title}</h4>
                         <span onClick={closeModal}><i className="fas fa-times"></i></span>
                     </div>
                     <div className="content">

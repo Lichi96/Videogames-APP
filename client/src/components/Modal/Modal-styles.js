@@ -16,7 +16,7 @@ export const Overlay = styled.div`
 export const ContainerModal = styled.div`
     width: 400px;
     min-height: 200px;
-    background: #fff;
+    background: #514F50;
     position: relative;
     border-radius: 6px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 30px 0px;
@@ -45,7 +45,6 @@ export const ContainerModal = styled.div`
         h4 {
             font-weight: 500;
             font-size: 16px;
-            color: #1766dc;
         }
         span {
             font-size: 20px;
@@ -62,6 +61,7 @@ export const ContainerModal = styled.div`
         p {
             text-align: center;
             font-size: 28px;
+            color: #fff;
         }
         span {
             margin-right: 18px;
