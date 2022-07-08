@@ -30,10 +30,10 @@ const findVideogame = async (req, res) => {
             }]
         });
         
-        videogame ? res.json(videogame) : res.status(404).send("Videogame not found");
+        videogame ? res.json(videogame) : res.json({error: "Videogame not found"})
     }
     catch (error) {
-        res.status(404).send({error: error.message});
+        res.status(404).send({error: "Videogame not found"});
     }
 
 
