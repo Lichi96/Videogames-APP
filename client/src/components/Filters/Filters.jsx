@@ -59,7 +59,7 @@ const Filters = ({genres, setCurrentPage}) => {
                 </select>
             </OrderBy>
             <ClearFilters onClick={clearFilters}>Clear filters</ClearFilters>
-            <SearchBar byGenre={byGenre} byOrigin={byOrigin} />
+            <SearchBar byGenre={byGenre} byOrigin={byOrigin} setCurrentPage={setCurrentPage} />
             <FilterBy>
                 <h4>Filter By</h4>
                 <select name="data-source" value={byOrigin} onChange={handleFilterByOrigin}>
